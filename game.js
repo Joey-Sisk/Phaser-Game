@@ -1,20 +1,23 @@
 import Phaser from "phaser";
+
+// scenes
 import Welcome from "./scenes/Welcome";
 import Arcade from "./scenes/Arcade";
 
-let man;
-let cursors;
-
+// config
 new Phaser.Game({
-  width: 800,
-  height: 600,
-  backgroundColor: 0x9f9f9f,
-  scene: [Welcome, Arcade],
+  type: Phaser.AUTO,
+  width: 640,
+  height: 640,
+  backgroundColor: 0x87ceeb,
   physics: {
+    default: "arcade",
     arcade: {
-      debug: false,
+      gravity: { y: 200 },
     },
   },
+  scene: [Welcome, Arcade],
 });
 
+// character sprite
 // https://the-baldur.itch.io/pixelart-hiker
