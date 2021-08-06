@@ -4,7 +4,9 @@
   "description": "Phaser game playground",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "Joey Sisk",
   "license": "ISC",
