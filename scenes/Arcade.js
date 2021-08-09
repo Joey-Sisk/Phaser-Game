@@ -16,7 +16,7 @@ export default class Scene2 extends Phaser.Scene {
       "../assets/images/backgroundTiles.png",
       { frameHeight: 32, frameWidth: 32 }
     );
-    this.load.spritesheet("walking_player", "../assets/images/alienWalk.png", {
+    this.load.spritesheet("walking_player", "../assets/images/AlienWalk.png", {
       frameWidth: 32,
       frameHeight: 32,
     });
