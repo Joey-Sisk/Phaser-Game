@@ -3,6 +3,7 @@ import Phaser from "phaser";
 // scenes
 import Welcome from "./scenes/Welcome";
 import Arcade from "./scenes/Arcade";
+import Dungeon from "./scenes/Dungeon";
 
 // config
 new Phaser.Game({
@@ -16,7 +17,7 @@ new Phaser.Game({
       gravity: { y: 1000 },
     },
   },
-  scene: [Welcome, Arcade],
+  scene: [Welcome, Arcade, Dungeon],
 });
 
 // character sprite
